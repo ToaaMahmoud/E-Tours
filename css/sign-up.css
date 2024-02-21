@@ -1,0 +1,240 @@
+:root {
+    --mainColor: #0057FD;
+    --mainFont: 'Kanit', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3000;
+    background-image: url("../images/PageBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .3;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    opacity: .8;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(117, 112, 112);
+    outline: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0px auto;
+    animation: pageAnimation .75s ease-in-out;
+}
+
+div.logo img {
+    width: 200px;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+
+
+.Sign-up {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 25px;
+    width: 500px;
+    border: #e9e6e6;
+    box-shadow: 0px 0px 20px 12px #b7b7b7;
+}
+
+div#hedder {
+    position: relative;
+    height: 50px;
+    left: 20px;
+}
+
+div#hedder img {
+    width: 75px;
+    position: relative;
+    left: 200px;
+}
+
+.Sign-up>p {
+    font-size: 50px;
+    position: relative;
+    left: 175px;
+    font-weight: bold;
+    cursor: default;
+    height: 90px;
+}
+
+.Sign-up .inputs {
+    position: relative;
+    left: 90px;
+}
+
+.Sign-up .inputs input {
+    width: 320px;
+    height: 30px;
+    background-color: #EEEE;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.Sign-up label {
+    position:absolute;
+    left:0px;
+    margin:2px 0px 0px 10px;
+    color: gray;
+    font-size: 15px;
+    pointer-events: none;
+    transition: 1s ;
+}
+label#l-name{
+    position: absolute;
+    left: 160px;
+    margin-left: 25px;
+
+}
+
+.Sign-up .F-name input {
+    width: 150px;
+}
+
+.Sign-up .L-name input {
+    width: 150px;
+    margin-left: 20px;
+}
+
+.Sign-up a {
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+.Sign-up input#S-up {
+    width: 145px;
+    margin: 0px 0 30px 75px;
+    background-color: var(--mainColor);
+    color: white;
+    cursor: pointer;
+    padding: 0px;
+    height: 35px;
+    font-size: large;
+    transition: 1s ;
+}
+
+.Sign-up hr#top {
+    margin: 0 100px -15px 250px;
+}
+
+.Sign-up .line p {
+    margin-left: 225px;
+    color: grey;
+    cursor: default;
+}
+
+.Sign-up hr#bottom {
+    margin: -10px 280px 10px 80px;
+}
+
+.Sign-up #text p {
+    margin-left: 140px;
+    margin-bottom: 10px;
+    color: gray;
+
+}
+.Sign-up .google {
+    height: 45px;
+    }
+
+.Sign-up div#google {
+        border: 1px solid black;
+        border-radius: 30px;
+        height: 35px;
+        margin: 10px 155px 5px 135px;
+}
+
+.Sign-up div#google a {
+    color: #000;
+    font-weight: bold;
+    font-size: medium;
+    margin-left: 45px;
+    position: relative;
+    top: 5px;
+}
+
+
+.Sign-up .google img {
+    position: relative;
+    width: 20px;
+    left: 30%;
+    top: -75%;
+}
+
+.Sign-up .apple {
+    height: 45px;
+    }
+.Sign-up div#apple {
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 35px;
+    margin: 10px 155px 0px 135px;
+}
+
+.Sign-up div#apple a {
+    color: #000;
+    font-weight: bold;
+    font-size: medium;
+    margin-left: 45px;
+    position: relative;
+    top: 5px;
+}
+
+.Sign-up .apple img {
+    position: relative;
+    width: 20px;
+    left: 30%;
+    top: -65%;
+}
+
+.Sign-up div#go {
+    margin: 10px 150px 0px;
+    color: gray;
+}
+
+.Sign-up .inputs input:valid~label,
+.Sign-up .inputs input:focus~label{
+color: var(--mainColor);
+transform: translateY(-20px) ;
+padding:0px 10px 0px 10px;
+letter-spacing: 2px;
+}
+.Sign-up input#S-up:hover{
+    transform: scale(1.05,1.05);
+}

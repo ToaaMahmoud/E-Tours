@@ -1,0 +1,231 @@
+:root {
+    --mainColor: #0057FD;
+    --mainFont: 'Kanit', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3000;
+    background-image: url("../images/PageBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .3;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    opacity: .8;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(117, 112, 112);
+    outline: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0px auto;
+    animation: pageAnimation .75s ease-in-out;
+}
+
+div.logo img {
+    width: 200px;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+
+
+.login {
+    background-color: white;
+    border-radius: 25px;
+    width: 500px;
+    box-shadow: 0px 0px 20px 12px #b7b7b7;
+    margin: 0 auto;
+}
+
+div#hedder {
+    position: relative;
+    height: 75px;
+
+}
+
+div#hedder img {
+    width: 100px;
+    position: relative;
+    left: 200px;
+}
+
+.login>p {
+    font-size: 55px;
+    position: relative;
+    left: 165px;
+    font-weight: bold;
+    cursor: default;
+    height: 100px;
+
+}
+
+.login .inputs {
+    position: relative;
+    left: 90px;
+}
+
+.login .inputs input {
+    width: 320px;
+    height: 30px;
+    background-color:#EEEE;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.login label {
+    position:absolute;
+    left:0px;
+    margin:2px 0px 0px 10px;
+    color: gray;
+    font-size: 15px;
+    pointer-events: none;
+    transition: 1s ;
+}
+.login a {
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+.login .inputs a {
+    position: absolute;
+    top: 85px;
+    left: 5px;
+   font-size: 13px;
+}
+
+.login input#S-in {
+    width: 145px;
+    position: relative;
+    left: 75px;
+    background-color: var(--mainColor);
+    color: white;
+    cursor: pointer;
+    padding: 0px;
+    height: 35px;
+    font-size: large;
+    transition: 1s ;
+}
+
+.login hr#top {
+    margin: 0 100px -15px 250px;
+}
+
+.login .line p {
+    margin-left: 225px;
+    color: grey;
+    cursor: default;
+}
+
+.login hr#bottom {
+    margin: -10px 280px 10px 80px;
+}
+
+.login #text p {
+    margin-left: 140px;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.login .google {
+height: 45px;
+}
+.login div#google {
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 35px;
+    margin: 10px 155px 5px 135px;
+}
+
+.login div#google a {
+    color: #000;
+    font-weight: bold;
+    font-size: medium;
+    margin-left: 45px;
+    position: relative;
+    top: 5px;
+}
+
+.login .google img {
+    position: relative;
+    width: 20px;
+    left: 30%;
+    top: -75%;
+}
+
+.login .apple {
+    height: 45px;
+    }
+
+.login div#apple {
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 35px;
+    margin: 10px 155px 0px 135px;
+}
+
+.login div#apple a {
+    color: #000;
+    font-weight: bold;
+    font-size: medium;
+    margin-left: 45px;
+    position: relative;
+    top: 5px;
+}
+
+.login .apple img {
+    position: relative;
+    width: 20px;
+    left: 30%;
+    top: -65%;
+}
+
+.login div#go {
+    margin: 0px 170px 0px;
+    color: gray;
+}
+
+.login .inputs input:valid~label,
+.login .inputs input:focus~label{
+color: var(--mainColor);
+transform: translateY(-20px) ;
+padding:0px 10px 0px 10px;
+letter-spacing: 2px;
+}
+.login input#S-in:hover{
+    transform: scale(1.05,1.05);
+}

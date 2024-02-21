@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-tours</title>
+    <link rel="icon" href="images/Icon.png" />
+    <link rel="stylesheet" href="css/homeStyle.css" />
+    <!-- keyframes file -->
+    <link rel="stylesheet" href="css/keyframes.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Kanit:wght@300&family=Kaushan+Script&family=Lato&family=Roboto:wght@500&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- js link -->
+    <script src="js/homePage.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <img class="logo" src="images/Logo.png" />
+
+        <div class="HeaderBar">
+          <ul>
+            <li class="e"><a href="index.html">Home</a></li>
+            <li class="e"><a href="pages/Tours.html">Tours</a></li>
+            <li class="e"><a href="pages/Contact-us.html">Contact us</a></li>
+            <li class="e"><a href="pages/About-us.html">about us</a></li>
+          </ul>
+        </div>
+
+        <div class="searchDiv">
+          <form action="#" class="searchInput">
+            <input type="search" name="search" placeholder="Search..." />
+            <button type="submit"><img src="images/Search.png" /></button>
+          </form>
+        </div>
+        <div class="ls">
+          <ul>
+            <li class="login"><a href="pages/sign-in.html">Login</a></li>
+            <li class="signup"><a href="pages/sign-up.html">Sign up</a></li>
+          </ul>
+        </div>
+      </header>
+      <!-- start of body -->
+      <div class="mainContainer">
+        <div class="section1">
+          <div class="sec1-content">
+            <div class="sec1-elements">
+              <p>DISCOVER THE NATURAL NEW TRAVEL</p>
+              <h1>Enjoy The <br />Best Moment Of Life</h1>
+              <!-- use link -->
+              <a href="pages/Tours.html">Discover More</a>
+            </div>
+          </div>
+          <!-- reservation section -->
+          <div class="sec1-reservation">
+            <!-- box 1 -->
+            <div class="boxes">
+              <div class="iconBox">
+                <!-- location icon -->
+                <i class="fa-solid fa-location-dot fa-2xl"></i>
+              </div>
+              <div class="dataBox">
+                <div class="labelAndI">
+                  <label for="location">Location</label
+                  ><i class="fa-solid fa-caret-down"></i>
+                </div>
+                <input
+                  type="text"
+                  id="location"
+                  value="Hurghada, Red Sea Governorate"
+                />
+              </div>
+            </div>
+            <!-- box 2 -->
+            <div class="boxes">
+              <div class="iconBox">
+                <!-- location icon -->
+                <i class="fa-regular fa-calendar-minus fa-2xl"></i>
+              </div>
+              <div class="dataBox">
+                <div class="labelAndI">
+                  <label for="checkIn">Check In</label
+                  ><i class="fa-solid fa-caret-down"></i>
+                </div>
+                <input type="date" id="checkIn" value="2022-10-15" />
+              </div>
+            </div>
+            <!-- box 3 -->
+            <div class="boxes">
+              <div class="iconBox">
+                <!-- location icon -->
+                <i class="fa-regular fa-calendar-minus fa-2xl"></i>
+              </div>
+              <div class="dataBox">
+                <div class="labelAndI">
+                  <label for="checkOut">Check Out</label
+                  ><i class="fa-solid fa-caret-down"></i>
+                </div>
+                <input type="date" id="checkOut" value="2022-12-15" />
+              </div>
+            </div>
+            <!-- box4 -->
+            <div class="boxes">
+              <!-- link here -->
+              <a href="#"
+                >Search
+                <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="section2">
+          <div class="sec2-images"></div>
+          <div class="sec2-content">
+            <h2>We will make you happy <br />with our tour.</h2>
+            <p>
+              Our team of experienced travel experts meticulously design each
+              tour to ensure a perfect blend of exploration, relaxation, and
+              excitement. Personalized Experiences, We believe in tailoring
+              every trip to your preferences. Whether you're a thrill-seeker, a
+              culture enthusiast, or a relaxation aficionado, we've got you
+              covered.
+            </p>
+            <div class="sec2-links">
+              <!-- link here -->
+              <a href="pages/Tours.html">Book Now</a>
+              <!-- link here -->
+              <a href="pages/About-us.html"
+                >About More <i class="fa-solid fa-arrow-right fa-xs"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- section 3 -->
+        <div class="section3">
+          <div class="sec3-list">
+            <h1>Best Features For You</h1>
+            <dl>
+              <dt>
+                <div>
+                  <i class="fa-solid fa-wifi fa-sm"></i>
+                  <h2>Free High Speed Wifi</h2>
+                </div>
+              </dt>
+              <dd>Stay connected with our complimentary high-speed WiFi.</dd>
+              <dt>
+                <div>
+                  <i class="fa-solid fa-suitcase-rolling fa-lg"></i>
+                  <h2>Free Storage Luggage</h2>
+                </div>
+              </dt>
+              <dd>
+                Enjoy the convenience of complimentary luggage storage during
+                your stay.
+              </dd>
+              <dt>
+                <div>
+                  <i class="fa-solid fa-burger fa-lg"></i>
+                  <h2>Free Snacks &amp; Delicious Meals</h2>
+                </div>
+              </dt>
+              <dd>
+                Indulge in our travel experience with delightful food service.
+                Our trips company offers a curated menu of delicious meals.
+              </dd>
+              <dt>
+                <div>
+                  <i class="fa-solid fa-tags fa-lg"></i>
+                  <h2>Exclusive Travel Discounts</h2>
+                </div>
+              </dt>
+              <dd>
+                Unlock special savings and exclusive discounts as our valued
+                traveler, making your journey even more affordable.
+              </dd>
+            </dl>
+          </div>
+          <div class="sec3-images">
+            <div class="sec3-single-img"></div>
+            <div class="sec3-single-img"></div>
+            <div class="sec3-single-img"></div>
+            <div class="sec3-single-img"></div>
+          </div>
+        </div>
+        <!-- section 4 -->
+        <div class="section4">
+          <div class="sec4-slider">
+            <h1>Top Destination</h1>
+          </div>
+          <div class="sec4-cards-container">
+            <div class="sec4-card">
+              <div class="sec4-card-img">
+                <img src="images/home/sec4-img1.jpg" alt="No image" />
+              </div>
+              <div class="sec4-img-name">
+                <h2>Pyramids</h2>
+              </div>
+              <div class="sec4-img-location">
+                <div class="sec4-img-location-leftSide">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <a href="https://maps.app.goo.gl/2TeiVfKQSbx7EXTs7"
+                    >Cairo, Giza Governorate</a
+                  >
+                </div>
+                <div class="sec4-location-rate">
+                  <p>3.5</p>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="sec4-img-price">
+                <p>&pound; 7500</p>
+                <!-- link here -->
+                <a href="pages/Tour-Booking.html">Book Now</a>
+              </div>
+            </div>
+            <div class="sec4-card">
+              <div class="sec4-card-img">
+                <img src="images/home/sec4-img2.jpg" alt="No image" />
+              </div>
+              <div class="sec4-img-name">
+                <h2>Mosque of Rifai and Sultan Hassan</h2>
+              </div>
+              <div class="sec4-img-location">
+                <div class="sec4-img-location-leftSide">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <a href="https://maps.app.goo.gl/ixFWtLbyNTbmPJss6"
+                    >Cairo Governorate</a
+                  >
+                </div>
+                <div class="sec4-location-rate">
+                  <p>4</p>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+
+              <div class="sec4-img-price">
+                <p>&pound; 1100</p>
+                <!-- link here -->
+                <a href="#">Book Now</a>
+              </div>
+            </div>
+            <div class="sec4-card">
+              <div class="sec4-card-img">
+                <img src="images/home/sec4-img3.jpg" alt="No image" />
+              </div>
+              <div class="sec4-img-name">
+                <h2>Red Sea Mountains</h2>
+              </div>
+              <div class="sec4-img-location">
+                <div class="sec4-img-location-leftSide">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <a href="https://maps.app.goo.gl/p1Ko8tFcCkMuSHg4A"
+                    >Hurghada, Red Sea Governorate</a
+                  >
+                </div>
+                <div class="sec4-location-rate">
+                  <p>4.5</p>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="sec4-img-price">
+                <p>&pound; 7000</p>
+                <!-- link here -->
+                <a href="#">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- section 5 -->
+        <div class="section5">
+          <h1>Prepare yourself &amp; let's explore the beauty of the world.</h1>
+          <p>Start your digital adventure with forest.</p>
+          <!-- link hear -->
+          <a href="pages/Tours.html">Get Started a Trip</a>
+        </div>
+        <!-- section 6 -->
+        <div class="section6">
+          <div class="sec6-img">
+            <img src="images/home/sec6-img1.jpg" alt="No image" />
+          </div>
+          <div class="sec6-content">
+            <h1>We Can Make Your Tour Most Enjoyable Holiday Ever</h1>
+            <p>
+              At our travel agency, we pride ourselves on our commitment to
+              making your tour the most enjoyable holiday ever. With meticulous
+              attention to detail and a passion for crafting unforgettable
+              experiences, we go above and beyond to ensure your journey is
+              nothing short of extraordinary.
+            </p>
+            <p>
+              From personalized itineraries that cater to your unique interests
+              to handpicking accommodations that provide comfort and luxury,
+              every aspect of your trip is carefully curated with your
+              satisfaction in mind.
+            </p>
+            <!-- link here -->
+            <a href="pages/About-us.html">More About Us</a>
+          </div>
+        </div>
+
+        <!-- section 7 -->
+        <div class="section7">
+          <div class="sec7-containers">
+            <h2>2K</h2>
+            <p>Total Locations</p>
+          </div>
+          <div class="sec7-containers">
+            <h2>5K</h2>
+            <p>Travel Activity</p>
+          </div>
+          <div class="sec7-containers">
+            <h2>8K</h2>
+            <p>Tour packages</p>
+          </div>
+        </div>
+        <!-- section 8 -->
+        <div class="section8">
+          <div class="sec8-content">
+            <div class="sec8-header">
+              <h1>Travel To make Sweet Memories</h1>
+              <p>Find trips that fit a flexible lifestyle</p>
+            </div>
+            <div class="sec8-body">
+              <!-- part 1 -->
+              <div class="sec8-body-parts">
+                <div class="numAndHead">
+                  <div class="number">01</div>
+                  <h2>Find trips that fit your freedom</h2>
+                </div>
+                <div class="content">
+                  <p>
+                    Travelling offers freedom and flexibility, solitude<br />
+                    and spontaneity, and privacy and purpose.
+                  </p>
+                </div>
+              </div>
+              <!-- part 2 -->
+              <div class="sec8-body-parts">
+                <div class="numAndHead">
+                  <div class="number">02</div>
+                  <h2>Get back to nature by travel</h2>
+                </div>
+                <div class="content">
+                  <p>
+                    The world is a playground and you can finally<br />explore
+                    mother nature's inimitable canvas.
+                  </p>
+                </div>
+              </div>
+              <!-- part 3 -->
+              <div class="sec8-body-parts">
+                <div class="numAndHead">
+                  <div class="number">03</div>
+                  <h2>Reignite those travel tastebuds</h2>
+                </div>
+                <div class="content">
+                  <p>
+                    Them are infinite reasons to love travel, one of<br />
+                    them being the food, glorious food.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sec8-img">
+            <!-- rate 1 -->
+            <div class="userRate">
+              <div class="userImg">
+                <img src="images/home/ahmed.jpeg" alt="image not found" />
+              </div>
+              <div class="userNameAndRate">
+                <h2>Ahmed</h2>
+                <div class="startAndNum">
+                  <p>4.8<i class="fa-solid fa-star"></i></p>
+                </div>
+              </div>
+            </div>
+            <!-- rate 2 -->
+            <div class="userRate">
+              <div class="userImg">
+                <img src="images/home/khaled.jpeg" alt="image not found" />
+              </div>
+              <div class="userNameAndRate">
+                <h2>Khaled</h2>
+                <div class="startAndNum">
+                  <p>4.6<i class="fa-solid fa-star"></i></p>
+                </div>
+              </div>
+            </div>
+            <!-- rate 3 -->
+            <div class="userRate">
+              <div class="userImg">
+                <img src="images/home/user.png" alt="image not found" />
+              </div>
+              <div class="userNameAndRate">
+                <h2>Toaa</h2>
+                <div class="startAndNum">
+                  <p>4.9<i class="fa-solid fa-star"></i></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="img">
+              <img src="images/home/sec8-img1.jpg" alt="image not found" />
+            </div>
+          </div>
+        </div>
+        <!-- section 9 -->
+        <div class="section9">
+          <div class="slideshow-container">
+            <!-- slide 1 -->
+            <div class="mySlides fade">
+              <div class="sec9-img">
+                <img src="images/home/sec9-img1.png" alt="image not found" />
+              </div>
+              <div class="sec9-content">
+                <h2>What Our Customer Say</h2>
+                <div class="customer">
+                  <div class="customer-img">
+                    <img src="images/home/mohamed.jpeg" alt="image not found" />
+                  </div>
+                  <div class="nameAndJop">
+                    <h3>Mohamed Khaled</h3>
+                    <p>Graphic Designer</p>
+                  </div>
+                  <div class="starts">
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                  </div>
+                </div>
+                <p>
+                  My adventure with Tripist in Egypt was truly eye-opening. From
+                  the vibrant streets of Cairo to the serene landscapes along
+                  the Nile, every moment was captivating. The meticulous
+                  planning and attention to detail in the itinerary made the
+                  experience truly remarkable.
+                </p>
+              </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="mySlides fade">
+              <div class="sec9-img">
+                <img src="images/home/sec9-img1.png" alt="image not found" />
+              </div>
+              <div class="sec9-content">
+                <h2>What Our Customer Say</h2>
+                <div class="customer">
+                  <div class="customer-img">
+                    <img src="images/home/user.png" alt="image not found" />
+                  </div>
+                  <div class="nameAndJop">
+                    <h3>Tasneem Helmy</h3>
+                    <p>Backend Developer</p>
+                  </div>
+                  <div class="starts">
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                  </div>
+                </div>
+                <p>
+                  My adventure with Tripist in Egypt was truly eye-opening. From
+                  the vibrant streets of Cairo to the serene landscapes along
+                  the Nile, every moment was captivating. The meticulous
+                  planning and attention to detail in the itinerary made the
+                  experience truly remarkable.
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <div style="text-align: center">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
+      </div>
+      <!-- end of body -->
+    </div>
+    <footer>
+      <div class="container">
+        <div class="f1">
+          <h1>About the company:</h1>
+          <p>
+            Explore Egypt with Egypt Explorer Tours. Unveil ancient wonders,
+            cruise the Nile, and create lasting memories. Tailored adventures
+            for every traveler.
+          </p>
+        </div>
+        <div class="f2">
+          <h1>Company:</h1>
+          <ul>
+            <li><a href="pages/About-us.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Tours &amp; Packages</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="f3">
+          <h1>Contact:</h1>
+          <ul>
+            <li>Phone:<br />+20 108 164 1851</li>
+            <li>Gmail:<br /><a>etours@gmail.com</a></li>
+            <li>Location:<br />10th of ramadan</li>
+          </ul>
+        </div>
+        <div class="f4">
+          <h1>Follow us:</h1>
+          <ul>
+            <li>
+              <a href="https://instagram.com" target="_blank"
+                ><img src="images/instagram.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://facebook.com" target="_blank"
+                ><img src="images/Facebook.png"
+              /></a>
+            </li>
+            <br />
+            <li>
+              <a href="https://x.com" target="_blank"
+                ><img src="images/X.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://gmail.com" target="_blank"
+                ><img src="images/Gmail.png"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="rights">
+      <p>&copy;2023 E-Tours | All rights reserved</p>
+    </div>
+  </body>
+</html>
